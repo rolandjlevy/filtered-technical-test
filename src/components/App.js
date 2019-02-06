@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
-import SidebarButton from './SidebarButton';
-import assets from './assets';
+import '../App.css';
+import SidebarContainer from '../containers/SidebarContainer';
 import AssetsHolder from './AssetsHolder';
 
 export default () => (
   <div className="wrapper">
+
     <div className="asset-summary">
       <div className="container">
         <div className="row">
@@ -24,7 +24,9 @@ export default () => (
       <div className="row">
         <div className="col-4">
           <ul className="asset-picker">
-          {
+            <SidebarContainer />
+            {/* <SidebarButtons assets={assets} /> */}
+          {/* {
             assets.map(item => {
               return (
               <SidebarButton 
@@ -37,7 +39,7 @@ export default () => (
               />
               )
             })
-          }
+          } */}
           </ul>
         </div>
         <div className="col-8">

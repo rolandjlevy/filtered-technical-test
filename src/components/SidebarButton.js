@@ -3,17 +3,17 @@ import React from 'react';
 class SidebarButton extends React.Component { 
     constructor(props) {
         super(props);
-        this.handleChange = this.handleChange.bind(this); 
+        this.loadAsset = this.loadAsset.bind(this);
     }
     
-    handleChange(id, event) {
+    loadAsset(id, event) {
         console.log(id, event);
     }
 
     render() {
         return (
             <React.Fragment>
-                <li onClick={event => this.handleChange(this.props.id, event)} className={`asset type-${this.props.classNameType}`}>
+                <li onClick={event => this.loadAsset(this.props.id, event)} className={`asset type-${this.props.classNameType}`}>
                     <h2>{this.props.name}</h2>
                     <p>
                         <span className="info">{this.props.duration} minutes</span>

@@ -1,5 +1,5 @@
 import React from 'react';
-import PreviewAsset from './PreviewAsset';
+import Asset from './Asset';
 
 class AssetsHolder extends React.Component {
     constructor(props) {
@@ -29,7 +29,7 @@ class AssetsHolder extends React.Component {
                     this.state.assetsPreviewed.length > 0 &&
                     this.state.assetsPreviewed.map(item => {
                         return (
-                            <PreviewAsset 
+                            <Asset 
                                 key={item.id}
                                 id={item.id}
                                 name={item.name} 

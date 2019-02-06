@@ -18,14 +18,14 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <PreviewAsset
+        <Asset
           classNameType="article"
           duration="0.11"
           id={11}
           name="10 Principles of Change Management"
           type="Article"
 />,
-        <PreviewAsset
+        <Asset
           classNameType="video"
           duration="0.06"
           id={12}
@@ -76,14 +76,14 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <PreviewAsset
+          <Asset
             classNameType="article"
             duration="0.11"
             id={11}
             name="10 Principles of Change Management"
             type="Article"
 />,
-          <PreviewAsset
+          <Asset
             classNameType="video"
             duration="0.06"
             id={12}

@@ -1,5 +1,5 @@
 import React from 'react';
-import SidebarButton from './SidebarButton';
+import SidebarButton from '../components/SidebarButton';
 
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';

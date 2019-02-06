@@ -1,6 +1,6 @@
 import React from 'react';
 
-class PreviewAsset extends React.Component {
+class Asset extends React.Component {
     render() {
         return (
             <React.Fragment>
@@ -17,4 +17,4 @@ class PreviewAsset extends React.Component {
     }
 }
 
-export default PreviewAsset;
+export default Asset;
