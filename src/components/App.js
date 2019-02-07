@@ -24,28 +24,17 @@ export default () => (
       <div className="row">
         <div className="col-4">
           <ul className="asset-picker">
+
             <SidebarContainer />
-            {/* <SidebarButtons assets={assets} /> */}
-          {/* {
-            assets.map(item => {
-              return (
-              <SidebarButton 
-                key={item.id}
-                id={item.id}
-                name={item.name} 
-                type={item.type} 
-                classNameType={item.type.replace(/ /g,"-").toLowerCase()}
-                duration={item.duration}
-              />
-              )
-            })
-          } */}
+            
           </ul>
         </div>
         <div className="col-8">
           <h2>Learning Assets Preview</h2>
           <ul className="asset-preview">
+
             <AssetsHolder />
+
           </ul>
         </div>
       </div>

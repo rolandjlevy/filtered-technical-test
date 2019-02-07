@@ -1,5 +1,5 @@
 
-function loadAssets(state = '', action) {
+function loadAssets(state = [], action) {
   switch (action.type) {
     case 'LOAD_ASSETS':
       return action.assets;

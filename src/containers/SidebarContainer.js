@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
-import { setReceiveId, setLoadAssets } from '../actions';
+import { setReceiveId, setLoadAssets, setPreviewAssets } from '../actions';
 import SidebarButtons from '../components/SidebarButtons';
 
 function mapStateToProps(state) {
   return {
+    receiveId: state.receiveId,
     assets: state.assets,
-    receiveId: state.receiveId
+    previewAsset: state.previewAsset
   }
 }
 
@@ -16,6 +17,9 @@ function mapDispatchToProps(dispatch) {
     },
     setLoadAssets: () => {
       dispatch(setLoadAssets())
+    },
+    setPreviewAssets: (assets) => {
+      dispatch(setPreviewAssets(assets))
     }
   }
 }

@@ -8,6 +8,13 @@ export function setLoadAssets(){
     }
 }
 
+export function setPreviewAssets(previewAsset){
+    return {
+      type: 'PREVIEW_ASSETS',
+      previewAsset
+    }
+}
+
 export function setReceiveId(id){
     return {
       type: 'RECEIVE_ID',
