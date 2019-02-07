@@ -4,12 +4,22 @@ import assets from '../assets';
 class SidebarButtons extends React.Component { 
     constructor(props, context) {
         super(props);
-        this.props.setLoadAssets();
         this.handleClick = this.handleClick.bind(this);
         // const reduxState = this.props.store.getState();
-        // const { store } = this.props;
-        // console.log(store);
     }
+
+    // componentDidMount(){
+    //     const { store } = this.props;
+    //     store.subscribe( () => {
+    //         this.updateFromStore();
+    //     });
+    // }
+
+    // updateFromStore(){
+    //     const { store } = this.props;
+    //     const reduxState = store.getState();
+    //     this.props.setLoadAssets();
+    // }
     
     handleClick(id, event) {
         event.preventDefault();
