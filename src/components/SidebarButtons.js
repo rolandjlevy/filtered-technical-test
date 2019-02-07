@@ -1,37 +1,26 @@
 import React from 'react';
-import assets from '../assets';
 
 class SidebarButtons extends React.Component { 
     constructor(props, context) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
-        // const reduxState = this.props.store.getState();
     }
 
-    // componentDidMount(){
-    //     const { store } = this.props;
-    //     store.subscribe( () => {
-    //         this.updateFromStore();
-    //     });
-    // }
-
-    // updateFromStore(){
-    //     const { store } = this.props;
-    //     const reduxState = store.getState();
-    //     this.props.setLoadAssets();
-    // }
+    componentDidMount() {
+        this.props.setLoadAssets();
+        // console.log(this.props.assets);
+    }
     
     handleClick(id, event) {
         event.preventDefault();
-        // this.props.setReceiveId(id);
-        const selectedAsset = assets.filter(item => item.id === id);
+        const selectedAsset = this.props.assets.filter(item => item.id === id);
         this.props.setPreviewAssets(selectedAsset);
     }
     
-    render(){
+    render(){   
         return (
             <React.Fragment>
-                {assets.map(item => (
+                {this.props.assets && this.props.assets.map(item => (
                 <li key={item.id} onClick={(event) => this.handleClick(item.id, event)} className={`asset type-${item.type.replace(/ /g,"-").toLowerCase()}`}>
                     <h2>{item.name}</h2>
                     <p>
